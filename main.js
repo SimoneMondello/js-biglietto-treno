@@ -3,9 +3,10 @@ let numerokm= prompt('Inserisci numero km da percorrere');
 const price = 0.21;    // Prezzo
 const fullPrice = numerokm*price; // numero scelto da cliente
  
-let totalPrice 
+let totalPrice
 
-    if(età <18) {
+
+    if (età <18) {
     alert('Sconto 20%')  
     totalPrice = fullPrice -(fullPrice*20/100);
 } 
@@ -19,8 +20,10 @@ else {
     totalPrice= fullPrice;
 }
    
-   
-    
+
+document.getElementById('prezzo').innerHTML = totalPrice;
+
+
     
     
     console.log("Total:", totalPrice);
